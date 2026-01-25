@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Reads</title>
+  </head>
+  <body>
+    <h1>Read</h1>
+    <ul>
+      <li>1984 – George Orwell</li>
+      <li>The Alchemist – Paulo Coelho</li>
+    </ul>
+
+    <h1>In queue...</h1>
+    <ul>
+      <li>Atomic Habits – James Clear</li>
+    </ul>
+
+    <a href="index.html">← Back to home</a>
+  </body>
+</html>
