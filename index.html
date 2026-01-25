@@ -2,17 +2,182 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My GitHub Page</title>
-  </head>
-  <body>
-    <h1>Hello from GitHub Pages </h1>
-    <p>If you can see this, deployment works.</p>
-    <h2>Pages</h2>
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="Reads.html">Reads</a></li>
-    </ul>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ruby</title>
 
+    <style>
+      :root{
+        --bg: #ffffff;
+        --text: #0b0b0c;
+        --muted: #5b5f66;
+        --line: #e8e8ea;
+        --max: 760px;
+      }
+
+      *{ box-sizing: border-box; }
+      body{
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 18px/1.55 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      }
+
+      a{ color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+      a:hover{ text-decoration-thickness: 2px; }
+
+      .container{
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 56px 22px 80px;
+      }
+
+      header{ margin-bottom: 42px; }
+
+      .kicker{
+        color: var(--muted);
+        font-size: 14px;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      h1{
+        font-size: clamp(36px, 5vw, 54px);
+        line-height: 1.05;
+        margin: 0 0 16px;
+      }
+
+      .lede{
+        font-size: 20px;
+        color: var(--muted);
+        max-width: 62ch;
+      }
+
+      .section{
+        padding: 26px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .section h2{ margin: 0 0 10px; }
+      .section h3{ margin-top: 18px; }
+
+      .list{ padding-left: 18px; }
+      .list li{ margin: 10px 0; }
+
+      .small{
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      footer{
+        border-top: 1px solid var(--line);
+        margin-top: 42px;
+        padding-top: 18px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+
+      <header>
+        <div class="kicker">Personal site</div>
+        <h1>Hi, I’m Ruby.</h1>
+        <p class="lede">
+          I’m an avid learner with a keen interest in dissecting how we think — and how to think.
+        </p>
+      </header>
+
+      <section class="section">
+        <h2>🔍 My lenses</h2>
+        <p>I mainly explore the world through two lenses:</p>
+
+        <h3>Systems Neuroscience</h3>
+        <p>
+          I’m interested in understanding the neural circuitry underlying behaviour
+          and decision-making.
+        </p>
+
+        <ul class="list">
+          <li>
+            Undergraduate researcher at the
+            <a href="https://tyelab.org/" target="_blank">
+              <strong>Kay Tye Lab</strong>
+            </a> (Salk Institute),
+            studying neuromodulation and adaptive decision making.
+          </li>
+
+          <li>
+            Summer Undergraduate Research Fellow at
+            <a href="https://davidandersonlab.caltech.edu/" target="_blank">
+              <strong>David Anderson’s Lab</strong>
+            </a> (Caltech),
+            studying sensory processing and aggressive state.
+          </li>
+
+          <li>
+            Undergraduate researcher at the
+            <a href="https://pharmacy.ucsd.edu/faculty/radic" target="_blank">
+              <strong>Zoran Radic Lab</strong>
+            </a> (Skaggs School of Pharmacy),
+            studying anti-organophosphate antidotes and enzyme kinetics.
+          </li>
+
+          <li>
+            Instructional Assistant for
+            <strong>Dr. Cory Root’s Neuroanatomy</strong>
+            (BIPN 160 / BGGN 254).
+          </li>
+        </ul>
+
+        <p class="small">
+          Broadly, I’m interested in how internal states shape perception,
+          learning, and choice.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>📚 Reading</h2>
+        <p>
+          I’m a firm believer in <em>linguistic relativity</em> — that words shape the way we think.
+          I read to train my brain to savor challenges.
+        </p>
+
+        <h3>January 2026</h3>
+        <ul class="list">
+          <li>The Breakfast of Champions — Kurt Vonnegut</li>
+          <li>The Vegetarian — Han Kang</li>
+          <li>Baron in the Trees — Italo Calvino</li>
+          <li>Gigi — Colette</li>
+          <li>Happenings — Annie Ernaux</li>
+          <li>Chance Acquaintances — Colette</li>
+          <li>Bunny — Mona Awad</li>
+          <li>If on a winter’s night a traveler — Italo Calvino</li>
+        </ul>
+
+        <h3>In queue</h3>
+        <ul class="list">
+          <li>White Nights — Fyodor Dostoyevsky</li>
+          <li>V — Thomas Pynchon</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>🚀 Side projects</h2>
+        <ul class="list">
+          <li><strong>Rocket Propulsion Lab</strong></li>
+        </ul>
+      </section>
+
+      <footer>
+        <div>© <span id="y"></span> Ruby</div>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
